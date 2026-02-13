@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Server - Normal SMP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="images/logo.png" alt="Normal SMP" class="logo">
+                <span class="brand-text">NORMAL SMP</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="rules.html" class="nav-link">Rules</a></li>
+                <li><a href="staff.html" class="nav-link">Staff</a></li>
+                <li><a href="join.html" class="nav-link active">Join</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Join Normal SMP</h1>
+            <p>Connect to our server and start playing now</p>
+        </div>
+    </section>
+
+    <!-- Join Content -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Server IP Section -->
+            <div class="join-hero">
+                <div class="server-ip-large">
+                    <div class="ip-label">Server IP Address</div>
+                    <div class="ip-address" id="serverIP">mc.normalsmp.com</div>
+                    <button class="copy-button" id="copyButton">
+                        <i class="fas fa-copy"></i> Copy IP Address
+                    </button>
+                    <div class="copy-success" id="copySuccess">
+                        <i class="fas fa-check"></i> Copied to clipboard!
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Join Steps -->
+            <div class="steps-section">
+                <h2>How to Join</h2>
+                <p class="steps-intro">Connect to Normal SMP in just a few steps</p>
+                
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Launch Minecraft</h3>
+                            <p>Open <strong>Minecraft Java Edition</strong> or <strong>Bedrock Edition</strong>. We support crossplay between both versions.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Go to Multiplayer</h3>
+                            <p>From the main menu, click on "Multiplayer" to access the server list.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Add Server</h3>
+                            <p>Click "Add Server" and enter the following:<br>
+                            <strong>Server Name:</strong> Normal SMP<br>
+                            <strong>Server Address:</strong> mc.normalsmp.com</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Join & Play</h3>
+                            <p>Click "Done" then double-click the server to join. No whitelist required — jump right in!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Requirements -->
+            <div class="requirements-section">
+                <h2>Server Information</h2>
+                <div class="requirements-grid">
+                    <div class="requirement-card">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Java & Bedrock</h3>
+                        <p>Supports both Java Edition and Bedrock crossplay</p>
+                    </div>
+                    <div class="requirement-card">
+                        <i class="fas fa-unlock"></i>
+                        <h3>No Whitelist</h3>
+                        <p>Join anytime — no application required</p>
+                    </div>
+                    <div class="requirement-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Read the Rules</h3>
+                        <p>Familiarize yourself with gameplay rules</p>
+                    </div>
+                    <div class="requirement-card">
+                        <i class="fab fa-discord"></i>
+                        <h3>Join Discord</h3>
+                        <p>Stay connected with the community</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Getting Started -->
+            <div class="getting-started">
+                <h2>Getting Started Guide</h2>
+                <div class="guide-content">
+                    <div class="guide-section">
+                        <h3><i class="fas fa-map-marked-alt"></i> First Steps</h3>
+                        <ul>
+                            <li>Spawn at the server hub and explore the spawn area</li>
+                            <li>Read the rules board at spawn</li>
+                            <li>Use <code>/rtp</code> to randomly teleport to a safe location in the wilderness</li>
+                            <li>Find a nice spot to build your first base</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h3><i class="fas fa-shield-alt"></i> Protect Your Base</h3>
+                        <ul>
+                            <li>Hide your base well — griefing and raiding are allowed</li>
+                            <li>Build far from spawn to avoid being found easily</li>
+                            <li>Use teams to coordinate with trusted players</li>
+                            <li>Keep valuables in secure, hidden locations</li>
+                        </ul>
+                    </div>
+
+                    <div class="guide-section">
+                        <h3><i class="fas fa-terminal"></i> Essential Commands</h3>
+                        <div class="commands-list">
+                            <div class="command-item">
+                                <code>/spawn</code>
+                                <span>Return to spawn</span>
+                            </div>
+                            <div class="command-item">
+                                <code>/sethome [name]</code>
+                                <span>Set a home location</span>
+                            </div>
+                            <div class="command-item">
+                                <code>/home [name]</code>
+                                <span>Teleport to your home</span>
+                            </div>
+                            <div class="command-item">
+                                <code>/tpa [player]</code>
+                                <span>Request to teleport to a player</span>
+                            </div>
+                            <div class="command-item">
+                                <code>/help</code>
+                                <span>View all commands</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="guide-section">
+                        <h3><i class="fas fa-users"></i> Community Integration</h3>
+                        <ul>
+                            <li>Join our Discord server to connect with other players</li>
+                            <li>Introduce yourself in the chat</li>
+                            <li>Ask questions - our community is friendly and helpful</li>
+                            <li>Participate in server events for rewards</li>
+                            <li>Visit the spawn shops to trade with other players</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Discord Section -->
+            <div class="discord-join">
+                <div class="discord-card">
+                    <i class="fab fa-discord"></i>
+                    <h2>Join Our Discord Community</h2>
+                    <p>Connect with thousands of players, get support, participate in events, and stay updated with server news.</p>
+                    <a href="https://discord.gg/w2VAY2GbvK" class="btn btn-discord" target="_blank">
+                        <i class="fab fa-discord"></i> Join Discord Server
+                    </a>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-question-circle"></i>
+                            <h3>Do I need to apply or get whitelisted?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No! Normal SMP is open to all players. Simply connect and start playing immediately.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-question-circle"></i>
+                            <h3>Can I play on Bedrock Edition?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes! We support both Java and Bedrock Edition through our cross-play compatibility. Bedrock players can join using the same IP address.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-question-circle"></i>
+                            <h3>How do I protect my items from being stolen?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Since raiding is allowed, the best way to protect your items is to hide your base well, build far from spawn, and use ender chests for your most valuable items. You can also team up with trusted players for better defense.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-question-circle"></i>
+                            <h3>What if I get raided or griefed?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Raiding and griefing are allowed as part of semi-anarchy gameplay. Hide your base well, use teams for protection, and keep backups of important items. This is part of the survival challenge!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-question-circle"></i>
+                            <h3>Can I invite my friends?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Of course! We encourage players to invite friends. The more, the merrier!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support -->
+            <div class="support-section">
+                <h2>Need Help?</h2>
+                <div class="support-grid">
+                    <div class="support-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Server Wiki</h3>
+                        <p>Comprehensive guides and tutorials</p>
+                        <a href="https://discord.gg/w2VAY2GbvK" class="btn btn-outline-small" target="_blank">Visit Wiki</a>
+                    </div>
+                    <div class="support-card">
+                        <i class="fas fa-ticket-alt"></i>
+                        <h3>Support Tickets</h3>
+                        <p>Get help from our staff team</p>
+                        <a href="https://discord.gg/w2VAY2GbvK" class="btn btn-outline-small" target="_blank">Open Ticket</a>
+                    </div>
+                    <div class="support-card">
+                        <i class="fas fa-comments"></i>
+                        <h3>Community Chat</h3>
+                        <p>Ask questions in real-time</p>
+                        <a href="https://discord.gg/w2VAY2GbvK" class="btn btn-outline-small" target="_blank">Join Chat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Normal SMP</h4>
+                    <p>A professional Minecraft survival server delivering excellence since 2024.</p>
+                    <div class="social-links">
+                        <a href="https://discord.gg/w2VAY2GbvK" class="social-link" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/@TheNormalSMPVanilla" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                        <li><a href="staff.html">Staff</a></li>
+                        <li><a href="join.html">Join</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Wiki</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Vote</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> normalsmpmc@gmail.com</li>
+                        <li><i class="fas fa-server"></i> mc.normalsmp.com</li>
+                        <li><i class="fab fa-discord"></i> discord.normalsmp.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Normal SMP. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
